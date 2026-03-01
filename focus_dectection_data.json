@@ -1,0 +1,143 @@
+{
+  "technologies": {
+    "webgazer_js": {
+      "name": "WebGazer.js",
+      "type": "Eye Tracking",
+      "capabilities": [
+        "Real-time gaze prediction using webcam",
+        "Self-calibration from clicks and cursor movements",
+        "Browser-based, no server required",
+        "Multiple gaze prediction models",
+        "Eye position tracking for attention detection"
+      ],
+      "use_cases": [
+        "Attention monitoring",
+        "Gaze-based interaction",
+        "User behavior analysis",
+        "Educational applications"
+      ],
+      "integration_complexity": "Low",
+      "accuracy": "Medium (requires calibration)",
+      "browser_support": "All modern browsers"
+    },
+    "tensorflow_js_blazeface": {
+      "name": "TensorFlow.js with BlazeFace",
+      "type": "Face Detection",
+      "capabilities": [
+        "Real-time face detection in browser",
+        "Face landmark detection",
+        "Head pose estimation",
+        "Lightweight model (~5MB)",
+        "Multi-face detection"
+      ],
+      "use_cases": [
+        "Face presence detection",
+        "Head orientation tracking",
+        "Attention state inference",
+        "Facial expression analysis"
+      ],
+      "integration_complexity": "Medium",
+      "accuracy": "High",
+      "browser_support": "All modern browsers with WebGL"
+    },
+    "mediapipe_js": {
+      "name": "MediaPipe JavaScript",
+      "type": "Computer Vision Suite",
+      "capabilities": [
+        "Face mesh with 468 landmarks",
+        "Hand tracking",
+        "Pose detection",
+        "Holistic body analysis",
+        "Real-time processing"
+      ],
+      "use_cases": [
+        "Detailed facial analysis",
+        "Gesture recognition",
+        "Body posture monitoring",
+        "Multi-modal attention detection"
+      ],
+      "integration_complexity": "Medium-High",
+      "accuracy": "Very High",
+      "browser_support": "Modern browsers with WebGL"
+    },
+    "yolo_tensorflowjs": {
+      "name": "YOLO with TensorFlow.js",
+      "type": "Object Detection",
+      "capabilities": [
+        "Real-time object detection",
+        "Student behavior classification",
+        "Custom model training support",
+        "Mobile device detection",
+        "Classroom activity monitoring"
+      ],
+      "use_cases": [
+        "Phone usage detection",
+        "Student behavior analysis",
+        "Classroom monitoring",
+        "Distraction identification"
+      ],
+      "integration_complexity": "High",
+      "accuracy": "High (with proper training)",
+      "browser_support": "Modern browsers with WebGL"
+    }
+  },
+  "implementation_approaches": {
+    "basic_attention": {
+      "description": "Simple face detection + head pose estimation",
+      "technologies": [
+        "tensorflow_js_blazeface"
+      ],
+      "complexity": "Low",
+      "features": [
+        "Face presence detection",
+        "Basic head orientation",
+        "Simple attention scoring"
+      ]
+    },
+    "advanced_gaze": {
+      "description": "Eye tracking with gaze direction analysis",
+      "technologies": [
+        "webgazer_js",
+        "tensorflow_js_blazeface"
+      ],
+      "complexity": "Medium",
+      "features": [
+        "Precise gaze tracking",
+        "Calibration system",
+        "Attention heatmaps",
+        "Focus duration tracking"
+      ]
+    },
+    "comprehensive_monitoring": {
+      "description": "Multi-modal behavior analysis",
+      "technologies": [
+        "mediapipe_js",
+        "yolo_tensorflowjs"
+      ],
+      "complexity": "High",
+      "features": [
+        "Full body pose analysis",
+        "Facial expression recognition",
+        "Object detection (phones, books)",
+        "Behavior classification",
+        "Real-time alerts"
+      ]
+    }
+  },
+  "key_metrics": {
+    "attention_indicators": [
+      "Gaze direction and duration",
+      "Head pose (looking forward vs away)",
+      "Eye contact frequency",
+      "Facial expression (engaged vs bored)",
+      "Body posture",
+      "Device usage detection"
+    ],
+    "scoring_methods": [
+      "Weighted combination of indicators",
+      "Time-based attention scores",
+      "Comparison to baseline behavior",
+      "Real-time threshold alerts"
+    ]
+  }
+}
