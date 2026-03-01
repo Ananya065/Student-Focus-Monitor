@@ -1,95 +1,134 @@
-# 🎮 AI Student Focus Monitor  
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:9B5DE5&height=200&section=header&text=AI%20Student%20Focus%20Monitor&fontSize=35&fontColor=ffffff&animation=fadeIn" />
+</p>
 
-## 🧠 Level Up Your Concentration  
+<p align="center">
+  <b>🧠 Real-Time Attention Detection • 🔒 Privacy First • ⚡ Browser-Based AI</b>
+</p>
 
-> ⚡ *Focus is a superpower. Let’s measure it.*
-
----
-
-## 🕹️ Mission Brief  
-
-Welcome, Player 👩‍💻  
-
-Your mission is to build an AI system that detects whether a student is:
-
-- 🟢 **Focused** (Looking at screen)  
-- 🔴 **Distracted** (Looking away)  
-- 💤 **Sleeping**  
-- 📱 **Using Phone**  
-
-All powered by real-time webcam analysis.
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-TensorFlow.js-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Model-BlazeFace-6A1B9A?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Frontend-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Privacy-100%25%20Client%20Side-00C853?style=for-the-badge"/>
+</p>
 
 ---
 
-## 🎯 Game Mechanics  
+# 🧠 AI Student Focus Monitor
 
-Each webcam frame = **1 Game Tick** 🎮  
+> ⚡ “Focus is a superpower. Let’s measure it.”
 
-The AI checks:  
+AI Student Focus Monitor is a real-time browser-based behavioral AI system that estimates attention levels using facial detection and movement analysis — fully client-side.
 
-- 👀 Face detected?  
-- 🧭 Head orientation straight?  
-- 👁 Eyes open?  
+No backend.  
+No data storage.  
+No tracking.  
 
-If all conditions pass →  
-✨ **+1 Focus XP**  
-
-If not →  
-⚠️ **Distraction Penalty**
+Everything runs inside your browser.
 
 ---
 
-## 📊 Focus Score System  
+## 🚀 Features
 
-🏆 90%+ → Focus Master  
-🥈 70–89% → Productive Mode  
-🥉 50–69% → Needs Improvement  
-💀 <50% → Distracted Zone  
+### 👁 Real-Time Face Detection
+- Webcam-based detection  
+- Facial landmark tracking  
+- Live bounding box overlay  
+
+### 🧭 Head Pose Estimation
+- Eye-distance ratio logic  
+- Orientation classification:
+  - Forward  
+  - Slightly Turned  
+  - Turned Away  
+
+### 📊 Smart Attention Scoring
+Weighted behavioral model:
+
+- Face Confidence → 40%  
+- Head Orientation → 30%  
+- Stability → 20%  
+- Time Penalty → 10%  
+
+Smoothed using moving average for stable results.
 
 ---
 
-## 🛠️ Power Stack  
-
-- 🐍 Python  
-- 🎥 OpenCV  
-- 🧠 MediaPipe  
-- 🔢 NumPy  
+## 📈 Live Attention Graph
+- 60-second rolling visualization  
+- Real-time updates  
+- Dynamic scoring feedback  
 
 ---
 
-## 🧩 Game Architecture  
-📷 Webcam
+## ⚠ Smart Alerts
+- Triggered when attention stays below threshold  
+- Sustained detection (3 seconds logic)  
+- Adjustable sensitivity levels  
+
+---
+
+## 🏗 System Architecture
+
+Webcam Stream
 ↓
-👤 Face Detection
+Face Detection
 ↓
-🧭 Head Pose Estimation
+Head Pose Analysis
 ↓
-👁 Eye Tracking
+Movement Stability
 ↓
-🎮 Focus Engine
+Attention Scoring Engine
 ↓
-📊 Live Score Display
-
-🏅 Achievements (Future Updates)
-
-📱 Phone Detection Mode
-
-📈 Focus Analytics Dashboard
-
-☁️ Cloud Score Sync
-
-🧑‍🏫 Teacher Monitoring Mode
-
-
-🎖 Project Badges
-🎮 AI Project  
-⚡ Real-Time System  
-🧠 Computer Vision  
-📊 Focus Analytics  
+Smoothing Layer
+↓
+Live Graph + Alerts
 
 
 ---
 
-Paste → Commit → Push 🚀  
+## 🛠 Tech Stack
 
-Your repo is officially looking premium now 👑✨
+- TensorFlow.js  
+- BlazeFace  
+- Chart.js  
+- HTML5 Canvas  
+- Vanilla JavaScript  
+
+---
+
+## 🔐 Privacy First
+
+✔ 100% Client-Side Processing  
+✔ No video stored  
+✔ No server communication  
+✔ No user tracking  
+
+---
+
+## 🎯 Use Cases
+
+- Classroom engagement monitoring  
+- Self-study productivity tracking  
+- Online assessment supervision (prototype)  
+- Behavioral AI experimentation  
+- EdTech innovation  
+
+---
+
+## 🧪 Future Upgrades
+
+- Eye gaze tracking  
+- Advanced face mesh integration  
+- Phone detection via object detection  
+- Personalized baseline calibration  
+- Focus heatmaps  
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/ai-student-focus-monitor.git
+```
